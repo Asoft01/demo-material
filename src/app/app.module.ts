@@ -4,9 +4,11 @@ import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatRadioModule} from '@angular/material/radio';
+import {MatSelectModule} from '@angular/material/select';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,9 +18,11 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule, 
     BrowserAnimationsModule,
+  FormsModule,
     NoopAnimationsModule,
     MatCheckboxModule,
-    MatRadioModule
+    MatRadioModule, 
+    MatSelectModule
   ],
   providers: [],
   bootstrap: [AppComponent]
