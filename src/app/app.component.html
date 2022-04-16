@@ -8,17 +8,32 @@
   Show Details
 </mat-checkbox>
 
+
 <div *ngIf="showDetails.checked">Some details...</div> -->
+
 
 <!-- <mat-radio-group value="0">
   <mat-radio-button value="1">Male </mat-radio-button>
   <mat-radio-button value="0">Female</mat-radio-button>
 </mat-radio-group> -->
 
-<mat-form-field appearance="fill">
+
+<!-- <mat-form-field appearance="fill">
   <mat-select [(ngModel)]="color">
     <mat-option
     *ngFor="let color of colors" 
     value="color.id">{{ color.name }}</mat-option>
   </mat-select>
-</mat-form-field>
+</mat-form-field> -->
+
+<form class="example-form">
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Username" value="Sushi">
+  </mat-form-field>
+  <br>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Leave a comment</mat-label>
+    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+  </mat-form-field>
+</form>

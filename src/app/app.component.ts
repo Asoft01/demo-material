@@ -19,5 +19,5 @@ export class AppComponent {
     {id : 3, name: 'Blue'},
   ]
 
-  color = 2;
+color = 2;
 }
