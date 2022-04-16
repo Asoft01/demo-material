@@ -28,12 +28,16 @@
 
 <form class="example-form">
   <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Favorite food</mat-label>
-    <input matInput placeholder="Username" value="Sushi">
+    <mat-label>Enter Username </mat-label>
+    <input matInput placeholder="Username" required>
+    <!-- <span matSuffix>@domain.com</span> -->
+    <span matSiffix>@domain.com</span>
+    <span matPrefix>admin.</span>
+    <mat-error>
+      The username is required
+    </mat-error>
   </mat-form-field>
   <br>
-  <mat-form-field class="example-full-width" appearance="fill">
-    <mat-label>Leave a comment</mat-label>
-    <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
-  </mat-form-field>
+  <mat-hint>Type a unique username</mat-hint>
+  <br>
 </form>
