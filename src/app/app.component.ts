@@ -20,4 +20,8 @@ export class AppComponent {
   ]
 
 color = 2;
+
+minDate = new Date(2017, 1, 2);
+maxDate = new Date(2019, 1, 2);
+
 }
