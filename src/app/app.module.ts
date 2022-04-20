@@ -1,3 +1,4 @@
+import { CourseService } from './course.service';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -49,7 +50,11 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
     MatTabsModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [
+    CourseService,
+    { provide : CourseService, useClass: CourseService},
+    // { provide : DIALOG_DATA, useValue: {}}
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
