@@ -52,7 +52,7 @@ import { EditCourseComponent } from './edit-course/edit-course.component';
   ],
   providers: [
     CourseService,
-    { provide : CourseService, useClass: CourseService},
+    { provide : CourseService, useClass: CourseService },
     // { provide : DIALOG_DATA, useValue: {}}
   ],
   bootstrap: [AppComponent]
